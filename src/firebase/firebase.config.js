@@ -1,13 +1,15 @@
 import { initializeApp } from "firebase/app";
 
+console.log('environt varaible', import.meta.env.VITE_PASS)
+
 const firebaseConfig = {
-	apiKey: "AIzaSyAA-ASq8iegkHdgAJn73hw738CheHmCEiQ",
-	authDomain: "simple-firebase-ddc17.firebaseapp.com",
-	projectId: "simple-firebase-ddc17",
-	storageBucket: "simple-firebase-ddc17.appspot.com",
-	messagingSenderId: "393180211227",
-	appId: "1:393180211227:web:6a360dbbc80a655aa870be",
-	measurementId: "G-12C35G8C4D",
+	apiKey:import.meta.env.VITE_APIKEY,
+	authDomain:import.meta.env.VITE_AUTHDOMAIN,
+	projectId:import.meta.env.VITE_PROJECTID,
+	storageBucket:import.meta.env.VITE_STORAGEBUCKET,
+	messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID,
+	appId:import.meta.env.VITE_APPID,
+	measurementId:import.meta.env.VITE_MEASUREMENTID,
 };
 
 // Initialize Firebase
