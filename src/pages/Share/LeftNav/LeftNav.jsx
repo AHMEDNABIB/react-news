@@ -12,7 +12,7 @@ const LeftNav = () => {
 	}, []);
 	return (
 		<div>
-			<h4>All Category</h4>
+		
 			<div className="space-y-6">
 				<h2 className="text-2xl">All Categories</h2>
 				{categories.map((category) => (
